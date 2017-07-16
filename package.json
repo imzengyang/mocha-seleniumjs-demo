@@ -1,0 +1,20 @@
+{
+  "name": "mochaitest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tarray": "./node_modules/.bin/mocha  test_array --reporter mochawesome --reporter-options reportDir=reporter,reportFilename=02.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chromedriver": "^2.30.1",
+    "mocha": "^3.4.2",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^2.3.0"
+  }
+}
