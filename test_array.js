@@ -7,8 +7,7 @@ var driver = new webdriver.Builder().forBrowser('chrome').build();
 var arr = ["hello world","hello john","good morning","good class"];
 
 describe('hooks', function() {
-    
-    
+    this.timeout(30*1000)
   before(function() {
       console.log('before...........')
     driver.get('https://autowebtest.github.io/add-remove/');
@@ -49,7 +48,7 @@ describe('hooks', function() {
   });
 
   describe('#elemenet control', function() {
-    this.timeout(30*1000)
+    
     it('add 4 element 长度应该为4', function(done) { 
         arr.forEach((item)=>{
             driver.findElement(By.id('text')).sendKeys(item);
